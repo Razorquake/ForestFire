@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'logs_page_widget.dart' show LogsPageWidget;
+import 'logs_page2_widget.dart' show LogsPage2Widget;
 import 'package:flutter/material.dart';
 
-class LogsPageModel extends FlutterFlowModel<LogsPageWidget> {
+class LogsPage2Model extends FlutterFlowModel<LogsPage2Widget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

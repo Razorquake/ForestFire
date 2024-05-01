@@ -45,13 +45,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : const HomePageWidget(),
         ),
         FFRoute(
-          name: 'LogsPage',
-          path: '/logsPage',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'LogsPage')
-              : const LogsPageWidget(),
-        ),
-        FFRoute(
           name: 'ServicesPage',
           path: '/servicesPage',
           builder: (context, params) => params.isEmpty
@@ -64,6 +57,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'ContactsPage')
               : const ContactsPageWidget(),
+        ),
+        FFRoute(
+          name: 'LogsPage2',
+          path: '/logsPage2',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'LogsPage2')
+              : const LogsPage2Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

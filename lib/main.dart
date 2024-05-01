@@ -97,9 +97,9 @@ class _NavBarPageState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     final tabs = {
       'HomePage': const HomePageWidget(),
-      'LogsPage': const LogsPageWidget(),
       'ServicesPage': const ServicesPageWidget(),
       'ContactsPage': const ContactsPageWidget(),
+      'LogsPage2': const LogsPage2Widget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -128,14 +128,6 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.restore_rounded,
-              size: 24.0,
-            ),
-            label: 'Logs',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
               Icons.people_alt_outlined,
               size: 24.0,
             ),
@@ -148,6 +140,13 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             label: 'Contact Us',
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.restore_sharp,
+            ),
+            label: 'Logs',
             tooltip: '',
           )
         ],
