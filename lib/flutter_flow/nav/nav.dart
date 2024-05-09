@@ -64,6 +64,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'LogsPage2')
               : const LogsPage2Widget(),
+        ),
+        FFRoute(
+          name: 'OnBoarding',
+          path: '/onBoarding',
+          builder: (context, params) => const OnBoardingWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
